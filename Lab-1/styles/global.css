@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+
+}
+
+/* @media (min-width: 600px) {
+
+} */
+
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient(white, whitesmoke);
+    border-bottom: 3px solid whitesmoke;
+    /* box-shadow: 10px 5px red; */
+
+}
+
+.header__content {
+    display: flex;
+    flex-basis: 70%;
+    height: 45px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    background-image: url(../public/assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    
+}
+
+.footer {
+    height: 60px;
+    margin-top: auto;
+    display: flex;
+}
+
+.header nav {
+    flex: 2
+}
+
+.logo {
+    flex: 1
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    /* margin: 0; */
+    flex-wrap: wrap;
+}
+
+.links li {
+    margin-right: 30px;
+}
+
+.links li:last-child {
+    margin-right: 0;
+}
+
+.links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ec4668;
+    font-size: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    font-size: 24px;
+    color: #ec4668;
+}
+
+.logo {
+    /* display: inline-block; */
+    height: 100%;
+}
+
+.logo img {
+    max-height: 100%;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* flex-basis: 70%; */
+    width: 70%;
+    height: 400px;
+    margin: 20px;
+}
+
+.photo {
+    max-height: 400px;
+    display: inline-block;
+}
+
+.photo img {
+    min-height: 100px;
+    max-height: 100%;
+    border: 6px solid rgba(242, 123, 147, 0.6);
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info__block {
+    min-width: 500px;
+    width: 40%;
+    background: rgba(242, 123, 147, 0.6);
+    border-radius: 10px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__block h1 {
+    
+}

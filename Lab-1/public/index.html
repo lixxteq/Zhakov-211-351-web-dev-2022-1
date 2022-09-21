@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +16,9 @@
                 </figure>
                 <nav>
                     <ul class="links">
-                        <li><a href="">Обо мне</a></li>
-                        <li><a href="">Навыки</a></li>
-                        <li><a href="">Технологии</a></li>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#skills">Навыки</a></li>
+                        <li><a href="#tech">Технологии</a></li>
                     </ul>
                 </nav>
             </div>
@@ -26,30 +26,90 @@
 
         <main class="main">
             <div class="title">
-                <h1>Личная страница разработчика</h1>                
+                <h1>Личная страница разработчика</h1>
+                <h4>Жаков Роман</h4>                
             </div>
             <div class="about">
                 <figure class="photo"><img src="../public/assets/images/about.jpg" alt="My Photo"></figure>
-                <div class="info__block">
+                <div class="info__block" id="about">
                     <h1>Обо мне</h1>
-                    <h4>ТексLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.т</h4>
+                    <h4>Начинающий веб-разработчик. Мне 18 лет, я обучаюсь в Московском Политехническом университете по специальности "Информационная безопасность", а также самостоятельно изучаю веб-разработку и имею опыт в создании собственных мини-проектов.</h4>
                 </div>
             </div>
             <div class="info">
-                <div class="info__block">
+                <div class="info__block" id="skills">
                     <h1>Навыки</h1>
-                    <h4>ТекстLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                    <ul>
+                        <li>
+                            <h4>Уверенное знание git, умение работать в команде</h4>
+                        </li>
+                        <li>
+                            <h4>Написание простых пользовательских интерфейсов на React</h4>
+                        </li>
+                        <li>
+                            <h4>Умение работать с REST API, авторизацией и токенами</h4>
+                        </li>
+                        <li>
+                            <h4>Написание простого бекенда на Node.js</h4>
+                        </li>
+                        <li>
+                            <h4>Уверенные знания и большой опыт пользования ОС Linux </h4>
+                        </li>
+                    </ul>
                 </div>
-                <div class="info__block">
+                <div class="info__block" id="tech">
                     <h1>Технологии</h1>
-                    <h4>ТексLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.т</h4>
+                    <h4>Технологии, которыми я владею и уровень владения ими.</h4>
+                    <table>
+                        <tr>
+                            <th>Технологии</th>
+                            <th>Уровень знания</th>
+                        </tr>
+                        <tr>
+                            <td>Git</td>
+                            <td>Высокий</td>
+                        </tr>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>Высокий</td>
+                        </tr>
+                        <tr>
+                            <td>JS/TS</td>
+                            <td>Высокий</td>
+                        </tr>
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Низкий</td>
+                        </tr>
+                        <tr>
+                            <td>React</td>
+                            <td>Средний</td>
+                        </tr>
+                        <tr>
+                            <td>Redux</td>
+                            <td>Средний</td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap, Tailwind</td>
+                            <td>Низкий</td>
+                        </tr>
+                        <tr>
+                            <td>Нереляционные БД (MongoDB)</td>
+                            <td>Средний</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </main>
 
         <footer class="footer">
+            <div class="copy">&copy; Жаков Роман, 2022</div>
             <div class="footer__nav">
-                footer
+                <ul class="links">
+                    <li><p>Мои контакты:</p></li>
+                    <li><a href="https://t.me/123">Telegram</a></li>
+                    <li><a href="mailto:example@mail.com">Написать на почту</a></li>
+                </ul>
             </div>
         </footer>
     </div>

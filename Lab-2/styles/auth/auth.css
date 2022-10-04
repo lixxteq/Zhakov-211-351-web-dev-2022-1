@@ -1,0 +1,25 @@
+/* most rules are inherited from ../global.css */
+
+.header__bg {
+    background-image: url(../../public/assets/bg-auth);
+    height: 70vh;
+}
+
+.header {
+    margin-bottom: 0;
+}
+
+.main {
+    width: 30%;
+    margin-top: auto;
+    min-width: 400px;
+}
+
+.form__element {
+    margin-bottom: 10px;
+}
+
+.main__form .btn {
+    margin-top: 0;
+    padding: 10px 0 10px 0;
+}

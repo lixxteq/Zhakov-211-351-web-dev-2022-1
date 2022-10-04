@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/global.css">
+    <!-- class override -->
+    <link rel="stylesheet" href="../styles/auth/auth.css">
+    <title>Authentication page</title>
+</head>
+<body>
+    <div class="root">
+        <div class="header__bg"></div>
+
+        <header class="header">
+            <div class="header__content">
+                <a href="../public/feedback.html">К форме обратной связи <img src="../public/assets/arrow-right" alt=""></a>
+            </div>
+        </header>
+    
+        <main class="main">
+            <div class="title">
+                Авторизация
+            </div>
+            <form class="main__form" action="http://httpbin.org/post" method="post" enctype="multipart/form-data">
+                <div class="form__element">
+                    <input type="text" class="input__form" name="login" id="login" placeholder="Логин" required>
+                </div>
+    
+                <div class="form__element">
+                    <input type="password" name="password" id="password" class="input__form" required placeholder="Пароль">
+                </div>
+    
+                <div class="form__element">
+                    <input type="checkbox" name="remember" id="remember" class="input__form" value="true">
+                    <label for="remember">Запомнить меня</label>
+                </div>
+
+                <button type="submit" class="btn">Войти в аккаунт</button>
+            </form>
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>

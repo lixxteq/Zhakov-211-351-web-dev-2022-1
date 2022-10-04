@@ -1,0 +1,16 @@
+.sidebar, .scroll, .header {
+    display: none;
+}
+
+.product-list {
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.product-details .btn {
+    color: black;
+    border: 1px solid black;
+}

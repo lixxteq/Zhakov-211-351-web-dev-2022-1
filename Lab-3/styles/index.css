@@ -1,0 +1,175 @@
+.intro__background {
+    height: calc(100vh - 70px);
+    background-image: url(../public/assets/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+
+.intro {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px) brightness(0.4);
+}
+
+.intro__content {
+    height: 50%;
+    min-height: 200px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+}
+
+.intro__content h1 {
+    font-size: 7vw;
+    transition: all 1s ease-out 100ms;
+}
+
+.intro__content h2 {
+    font-size: 3vw;
+}
+
+.intro__content h1:hover {
+    font-size: calc(7vw * 1.03);
+}
+
+.game-placeholder {
+    min-width: 65vw;
+    background-color: rgb(27, 27, 27);
+    height: 500px;
+    border-radius: 30px;
+    scroll-snap-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.game-list {
+    padding-bottom: 20px;
+    min-height: 300px;
+    max-width: 90%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.scroller {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    width: 90%;
+    margin: auto;
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.game-list .btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: rgba(95, 106, 117, 0.3);
+    line-height: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.game-list .btn:hover {
+    background-color: rgba(95, 106, 117, 0.5);
+    cursor: pointer;
+}
+
+.game-poster {
+    width: 50%;
+    object-fit: cover;
+    max-height: 100%;
+    border-top-left-radius: 30px;
+}
+
+.game-header {
+    height: 60%;
+    display: flex;
+}
+
+.game-body {
+    flex-grow: 1;
+    padding: 20px;
+    font-size: 1.4em;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.game-body button {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(17, 17, 17);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.game-body::-webkit-scrollbar {
+    display: none;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.game-info::-webkit-scrollbar {
+    display: none;
+}
+
+.genre-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-info h3 {
+    margin: 0;
+}
+
+.content-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+@media all and (max-width: 980px) {
+    .game-header {
+        flex-direction: column;
+        min-height: 70%;
+    }
+
+    .game-poster {
+        width: 100%;
+    }
+
+    .game-placeholder {
+        height: 800px;
+    }
+}

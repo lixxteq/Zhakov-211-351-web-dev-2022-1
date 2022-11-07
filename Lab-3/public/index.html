@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
+
+    <script src="../src/lib/jquery-3.6.1.js"></script>
+    <script src="../src/loadIndexDOM.js"></script>
+    <title>World of Games</title>
+</head>
+<body>
+    <div class="root" id="root">
+        <header class="header">
+            <div class="header__content">
+                <div class="logo">
+                    <img src="../public/assets/logo.png" alt="Logo">
+                    <h1 class="title">World of Games</h1>
+                </div>
+                <nav class="navigation">
+                    <a href="#">Главная</a>
+                    <a href="../public/pages/catalog.html">Каталог игр</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="intro__background">
+                <div class="intro">
+                    <div class="intro__content">
+                        <h1>World of Games</h1>
+                        <h2>Исследуйте мир компьютерных игр вместе с нами!</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-title">
+                <h1>Популярные игры</h1>
+            </div>
+            
+            <div class="game-list" id="mountpoint">
+                <div class="btn previous">&lt;</div>
+                <div class="scroller">
+                    <!-- jQuery mountpoint -->
+                </div>
+                <div class="btn next">&gt;</div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="copyright">&#169; World of Games</div>
+                <nav class="contacts">
+                    <p>Связаться с нами: </p>
+                    <a href="">Telegram</a>
+                    <a href="">Email</a>
+                    <a href="">VK</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

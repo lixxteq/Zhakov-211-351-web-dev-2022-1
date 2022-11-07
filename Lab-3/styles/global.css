@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(17, 17, 17);
+    ;
+}
+
+.header {
+    height: 70px;
+    background-color: rgb(27, 27, 27);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    padding: 10px 10% 10px 10%;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    color: aliceblue;
+}
+
+.logo h1 {
+    font-size: 30px;
+    float: right;
+    vertical-align: middle;
+    line-height: 50px;
+    margin: auto 20px;
+}
+
+.logo img {
+    object-fit: cover;
+    height: 100%;
+    float: left;
+}
+
+.navigation a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+.navigation a:last-child {
+    margin-right: 0;
+}
+
+.navigation a:hover {
+    color: rgb(209, 125, 125);
+    border-bottom: 2px solid rgb(156, 37, 37);
+}
+
+.footer {
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+    margin-top: auto;
+    color: aliceblue;
+}
+
+.footer__content {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    padding: 0 10% 0 10%;
+    align-items: center;
+}
+
+.contacts a {
+    margin-left: 20px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.main {
+    flex-grow: 1;
+    color: aliceblue;
+}
+
+@media all and (max-width: 980px) {
+
+    .footer,
+    .footer__content {
+        height: 120px;
+    }
+
+    .logo h1 {
+        display: none;
+    }
+
+    .logo {
+        border: none;
+    }
+}

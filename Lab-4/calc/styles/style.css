@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9c46a;
+}
+
+.calc-container {
+    width: 70vw;
+    min-width: 700px;
+    height: 60vh;
+    min-height: 500px;
+    background-color: #f4a261;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+}
+
+.screen {
+    height: 170px;
+    margin: 20px;
+    background-color: rgb(171, 215, 253);
+    border-radius: 30px;
+    border: 1px solid;
+}
+
+.input-field, .pre-answer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.input-field {
+    height: 60%;
+    font-size: 4rem !important;
+    padding: 0 15px 0 15px;
+}
+
+.pre-answer {
+    height: 40%;
+    background-color: rgb(134, 195, 248);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 2.5em;
+    padding: 0 15px 0 15px;
+}
+
+.black {
+    color: black;
+}
+
+.grey {
+    color: rgb(87, 87, 87);
+}
+
+.input-field::-webkit-scrollbar, .pre-answer::-webkit-scrollbar {
+    display: none;
+}
+
+.buttons {
+    flex-grow: 1;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.digits {
+    flex: 3;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.operators {
+    flex: 1;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.key {
+    max-width: 30%;
+    width: 25%;
+    /* min-width: 30px; */
+    height: 20%;
+    margin: 10px;
+    /* gap: 10px; */
+    border: none;
+    border-radius: 20px;
+    background-color: #45c2b3;
+    cursor: pointer;
+    border: 1px solid;
+    font-size: 30px;
+}
+
+.bracket, .result, .operation {
+    background-color: #67b3d1;
+}
+
+.clear {
+    background-color: #e76f51;
+}
+
+@media screen and (min-width: 700px) {
+
+}

@@ -8,7 +8,7 @@ const pluralizeRecords = (x) => {
         "many": ["было найдено", "записей"]
     }
 
-    let current = (x % 10 === 1 && x % 100 != 11) ? "one" : ((x % 10 >= 2 && x % 10 <= 4) ? "few" : "many");
+    let current = (x % 10 === 1 && x % 100 != 11) ? "one" : (((x % 10 >= 2 && x % 10 <= 4) && (x % 100 < 12 || x % 100 > 14)) ? "few" : "many");
     return `${base} ${patterns[current][0]} ${x} ${patterns[current][1]}`
 }
 
@@ -17,3 +17,5 @@ console.log(pluralizeRecords(381));
 console.log(pluralizeRecords(511));
 console.log(pluralizeRecords(501));
 console.log(pluralizeRecords(22));
+console.log(pluralizeRecords(0));
+console.log(pluralizeRecords(12));

@@ -20,6 +20,7 @@
     width: 32%;
     background-color: rgb(27, 27, 27);
     border-radius: 30px;
+    margin-bottom: 5px;
 
     display: flex;
     flex-direction: column;

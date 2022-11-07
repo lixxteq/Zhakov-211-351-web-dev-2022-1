@@ -1,0 +1,13 @@
+@media print {
+    .main__info {
+        text-align: center;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+}

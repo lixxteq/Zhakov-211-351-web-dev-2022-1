@@ -1,0 +1,13 @@
+@media print {
+    .btn {
+        display: none;
+    }
+
+    .scroller {
+        flex-direction: column;
+    }
+
+    .footer {
+        display: none;
+    }
+}

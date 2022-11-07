@@ -1,6 +1,6 @@
 .intro__background {
     height: calc(100vh - 70px);
-    background-image: url(../public/assets/background.webp);
+    background-image: url(../../public/assets/background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -167,6 +167,7 @@
 
     .game-poster {
         width: 100%;
+        border-top-right-radius: 30px;
     }
 
     .game-placeholder {

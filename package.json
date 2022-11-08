@@ -1,0 +1,10 @@
+{
+  "name": "Zhakov-211-351-web-dev-2022-1",
+  "version": "1.0.0",
+  "repository": "https://github.com/lixxteq/Zhakov-211-351-web-dev-2022-1.git",
+  "author": "lixxteq <rlv1zhakov.liv@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  }
+}

@@ -140,7 +140,7 @@ function evaluate(str) {
         '-': ([x1, x2]) => x1 - x2,
         '/': ([x1, x2]) => x1 / x2,
         '*': ([x1, x2]) => x1 * x2
-    }
+    };
 
     const stack = [];
 
@@ -149,8 +149,10 @@ function evaluate(str) {
 
     expression.forEach((el, idx) => {
         if (isNumeric(el)) el = Number(el);
-        stack.push(isOperation(el) ? (operations[el](stack.splice(-2, 2))) : el)
-    })
+        stack.push(isOperation(el) 
+            ? (operations[el](stack.splice(-2, 2))) 
+            : el);
+    });
 
     console.log(stack);
     return stack;
@@ -187,8 +189,10 @@ function evaluate(str) {
 
 const calculate = (str) => {
     const value = evaluate(compile(str));
-    return (value.length === 1 && Number(value[0])) ? Number(value[0]).toFixed(2).toString() : '';
-}
+    return (value.length === 1 && Number(value[0])) 
+        ? Number(value[0]).toFixed(2).toString() 
+        : '';
+};
 
 
 window.onload = () => {
@@ -203,13 +207,13 @@ window.onload = () => {
             answerField.classList.remove('grey');
             answerField.classList.add('black');
         })() : (() => {
-            inputField.classList.remove('grey')
+            inputField.classList.remove('grey');
             inputField.classList.add('black');
             answerField.classList.remove('black');
             answerField.classList.add('grey');
-        })()
+        })();
 
-    }
+    };
 
     buttons.addEventListener('click', (e) => {
         let t = e.target;
@@ -218,21 +222,19 @@ window.onload = () => {
                 inputField.textContent += e.target.value;
                 answerField.textContent = calculate(inputField.textContent);
                 switchColors('grey');
-            }
-
-            else if (t.textContent === '=') {
+            } else if (t.textContent === '=') {
                 switchColors('black');
-                const answer = calculate(inputField.textContent)
-                answerField.textContent = answer === '' ? 'Невозможно вычислить' : answer;
-            }
-
-            else {
+                const answer = calculate(inputField.textContent);
+                answerField.textContent = answer === '' 
+                    ? 'Невозможно вычислить' 
+                    : answer;
+            } else {
                 inputField.textContent = '';
                 answerField.textContent = '';
                 switchColors('grey');
             }
         }
 
-        inputField.scrollBy(100, 0)
-    })
-}
+        inputField.scrollBy(100, 0);
+    });
+};

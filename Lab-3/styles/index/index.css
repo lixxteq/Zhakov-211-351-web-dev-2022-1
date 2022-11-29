@@ -43,7 +43,8 @@
 .game-placeholder {
     min-width: 65vw;
     background-color: rgb(27, 27, 27);
-    height: 500px;
+    min-height: 500px;
+    height: fit-content;
     border-radius: 30px;
     scroll-snap-align: center;
 
@@ -171,6 +172,6 @@
     }
 
     .game-placeholder {
-        height: 800px;
+       min-height: 800px;
     }
 }

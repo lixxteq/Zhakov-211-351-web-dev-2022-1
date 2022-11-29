@@ -1,5 +1,7 @@
 /// <reference path="lib/jquery-3.6.1.js" />
 
+const $ = window.$;
+
 const getData = async () => {
     const response = await fetch("./data.json").then(d => d.json())
     return response

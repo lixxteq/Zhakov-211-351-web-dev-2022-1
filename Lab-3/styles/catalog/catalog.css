@@ -1,7 +1,9 @@
 .main__header {
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    min-height: 200px;
+    height: fit-content;
+    margin-bottom: 10px;
 }
 
 .main__body {
@@ -15,7 +17,8 @@
 }
 
 .game-placeholder {
-    height: 800px;
+    min-height: 800px;
+    height: fit-content;
     min-width: 500px;
     width: 32%;
     background-color: rgb(27, 27, 27);
@@ -123,4 +126,10 @@
 
 .main__info h3 {
     font-size: 2rem;
+}
+
+@media all and (max-width: 980px) {
+    .main__header {
+        flex-direction: column;
+    }
 }
